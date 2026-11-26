@@ -109,7 +109,15 @@
   }
 }
 
+.v3-bklog-container:has(> .scene-result-skeleton) {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
 .scene-result-skeleton {
+  position: relative;
+  min-height: 64px;
   flex: 1;
   margin: var(--bklog-space-8);
   padding: var(--bklog-space-16);
